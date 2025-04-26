@@ -3,53 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoxxDev - Roblox Studio Programmer and Web App Creator</title>
+    <title>FoxxDev - Roblox Studio Programmer & Web App Creator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJf3WQxJxB9P7zYdF6p6UXc71c6h8R5i5nUv5DhgB7YyW4llw5EwHTQ8tkc8" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <h1>FoxxDev</h1>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="fs-3">FoxxDev</h1>
             <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item me-3"><a href="#about" class="nav-link text-white">About</a></li>
+                    <li class="nav-item me-3"><a href="#projects" class="nav-link text-white">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! My name is **FoxxDev**, and I am a programmer specializing in **Roblox Studio** and **web application development**. Over the years, I’ve developed a strong passion for creating immersive games and experiences on the Roblox platform, as well as building modern web solutions.</p>
-        <p>Currently, I am working on an exciting project: a **microblogging social network**, which aims to connect people and allow them to share their ideas quickly and creatively, focusing on simplicity and interaction.</p>
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Microblogging Social Network</h3>
-            <p>I’m developing a microblogging social network, where users can post short messages, interact with others, and follow topics of interest. The project is ongoing, and it aims to bring a fresh way of online communication, with innovative and user-friendly features.</p>
-        </div>
-        <div class="project">
-            <h3>Roblox Studio: Games and Tools</h3>
-            <p>In addition to social experiences, I also create games on **Roblox Studio**. My projects include open worlds, adventures, and tools to help other developers create their own Roblox experiences.</p>
-        </div>
-    </section>
+    <div class="container my-5">
+        <section id="about">
+            <h2 class="display-4 mb-4">About Me</h2>
+            <p class="lead">Hello! My name is <strong>FoxxDev</strong>, and I am a programmer specializing in <strong>Roblox Studio</strong> and <strong>web application development</strong>. I have a strong passion for creating immersive games on Roblox and building modern web solutions.</p>
+            <p>Currently, I am working on an exciting project: a <strong>microblogging social network</strong>, designed to provide users with a platform for quick and creative idea-sharing. My goal is to bring fresh communication experiences with a focus on simplicity and interaction.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can find me on social media and get in touch for collaborations or other opportunities!</p>
-        <ul>
-            <li>Email: <a href="mailto:contact@foxxdev.com">contact@foxxdev.com</a></li>
-            <li>Twitter: <a href="https://twitter.com/foxxdev" target="_blank">twitter.com/foxxdev</a></li>
-            <li>GitHub: <a href="https://github.com/foxxdev" target="_blank">github.com/foxxdev</a></li>
-        </ul>
-    </section>
+        <section id="projects">
+            <h2 class="display-4 mb-4">Projects</h2>
 
-    <footer>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/500" class="card-img-top" alt="Microblogging Social Network">
+                        <div class="card-body">
+                            <h5 class="card-title">Microblogging Social Network</h5>
+                            <p class="card-text">I’m developing a microblogging social network that allows users to post short messages, interact with others, and follow topics of interest. The project aims to revolutionize online communication by focusing on simplicity and interaction.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/500" class="card-img-top" alt="Roblox Studio Games">
+                        <div class="card-body">
+                            <h5 class="card-title">Roblox Studio Games</h5>
+                            <p class="card-text">In addition to my web development work, I also create immersive games in Roblox Studio. My Roblox projects include open worlds, adventures, and various development tools that help other developers build their own experiences on Roblox.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="display-4 mb-4">Contact</h2>
+            <p>If you'd like to collaborate or discuss any opportunities, feel free to reach out to me:</p>
+            <ul class="list-unstyled">
+                <li><strong>Twitter:</strong> <a href="https://twitter.com/alfenas_da" target="_blank" class="text-dark">twitter.com/foxxdev</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/foxxhacc" target="_blank" class="text-dark">github.com/foxxhacc</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 FoxxDev. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
